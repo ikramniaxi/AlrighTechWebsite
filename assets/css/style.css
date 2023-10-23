@@ -9,7 +9,14 @@
     background: linear-gradient(145deg, rgba(217, 238, 247, 0.40) 3.3%, rgba(246, 246, 246, 0.40) 44.21%) !important;
 }
 .altlogo{
-    height: 50px;
+    height: 60px;
+}
+.background{
+    background-image: url('../images/home.png');
+    width: 100%;
+    background-size: 100%;
+    height: 100vh;
+    mix-blend-mode: light;
 }
 .homeNav{
     color: #000 !important;
@@ -87,6 +94,10 @@ font-weight: 400;
 }
 .cardRad{
     border-radius: 15px;
+    background-color: transparent !important;
+}
+.cardRad img{
+    border-radius: 15px;
 }
 .softtxt{
     color: #293241 !important;
@@ -101,6 +112,11 @@ line-height: 32.698px; /* 112% */
     width: 100%;
     
 }
+.cardsettingset{
+    border: none  !important;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 .bg-body-tertiary{
     background-color: none !important;
 }
@@ -111,6 +127,21 @@ font-size: 72px;
 font-style: normal;
 font-weight: bold;
  
+}
+.bgcolor{
+    position: relative;
+}
+.bgcolor::before{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height:400px;
+    bottom: 0px;
+    left: 10%;
+
+    background-color: #FCF1E1;
+    border-radius: 50px;
+    
 }
 .banTxt{
     color: #000 !important;
@@ -212,7 +243,9 @@ line-height: normal;
 .serviceCard{
     background:  #fcf1e1 !important;
     border-radius: 15px;
-}
+
+
+height: 250px;}
 .pana{
     height: 90px;
 }
@@ -327,9 +360,9 @@ font-weight: 500;
 }
 .customerborder{
     border-radius: 20px;
-    width: 28%;
+ 
     left: 390px;
-    top: 70px;
+    top: 80px;
 }
 .labelclr{
     color:  #EC9EE4;
@@ -346,9 +379,9 @@ font-weight: 500;
 .digitclr{
     color: #5ED8A1;
 }
-.rowmargin{
+/* .rowmargin{
     padding-top: 200px;
-}
+} */
 .manpic{
     height: 90vh;
     margin-left: 150px;
@@ -363,6 +396,18 @@ font-weight: 500;
 @media screen and (max-width: 992px) {
     .marginNav{
         margin-left: 0px;
+    }
+  }
+
+@media   (max-width: 1050px) {
+    .marginNav{
+        margin-left: 30px !important;
+    }
+  }
+  /* media queries----------------- */
+@media screen and (max-width: 1230px) {
+    .marginNav{
+        margin-left: 100px ;
     }
   }
 @media screen and (max-width: 768px) {
@@ -381,11 +426,28 @@ font-weight: 500;
     .ideatxt{
         font-size: 40px;
     }
+    .fteatureinh{
+        font-size: 17px;
+    }
+    .fteatureinp{
+        font-size: 17px !important;
+    }
   }
 @media screen and (max-width: 455px) {
      
     .ideatxt{
         font-size: 25px;
+    }
+    .trusttxt::before{
+
+        content: "";
+    position:absolute;
+    height: 23px;
+    width: 2px;
+    background-color:#707070 ;
+    top: 4px;
+    left:-30px;
+
     }
   }
 @media screen and (max-width: 1192px) {
@@ -400,6 +462,7 @@ font-weight: 500;
     }
   }
 
+ 
 
 
   /* Blog PAGE  CSS BY MUBASHIR DEVELOPER START ------------------------------------- */
@@ -1229,3 +1292,132 @@ font-weight: 500;
 }
 
   /* contact for job css end -------------------------- */
+=======
+  @media only screen and (max-width: 1200px) and (min-width:992px )  {
+
+    .customerborder{
+        position: absolute;
+        top: 10px;
+    }
+  }
+
+
+
+  /*###############>Testimaonal Css Start  <#############  */
+  * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* owl icon */
+/* Active dash icon */
+
+/* Adjust the margin between icons */
+
+/* owlicon */
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+  text-align: start !important;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-left: 2rem !important;
+}
+
+/* Adjust the margin between icons */
+.owl-carousel .owl-item .profileimg {
+  height: 70px !important;
+  border-radius: 50% !important;
+}
+
+.owl-carousel .owl-item img {
+  width: auto !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 27px !important;
+  height: 4px !important;
+  border-radius: 0px !important;
+}
+
+.serviceTxt {
+  color: #5e5e5e !important;
+  font-family: Hubot-Sans !important;
+  font-size: 20.071px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.222px; /* 155.556% */
+}
+/* .profileimg{
+    height: 70px !important;
+    border-radius: 50% !important;
+} */
+.profileBorder {
+  border-radius: 50%;
+}
+.founder {
+  color: #5e5e5e !important;
+  font-family: Hubot-Sans !important;
+  font-size: 13px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 215.385% */
+}
+.flag {
+  height: 14px;
+}
+.loremTxt {
+  color: #5e5e5e !important;
+  font-family: Hubot-Sans !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.requestBtn:hover {
+  border: none !important;
+  background: radial-gradient(
+      76.16% 76.16% at 31.97% 19.67%,
+      rgba(255, 255, 255, 0.7) 0%,
+      rgba(255, 255, 255, 0) 69.79%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #00a7e1 !important;
+  box-shadow: 1.85441px 17.61691px 28.74338px 0px rgba(0, 0, 0, 0.1) !important;
+}
+.testi {
+  color: #293241 !important;
+  font-family: Hubot-Sans !important;
+  font-size: 40px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.testiBg {
+  background-color: #f2fff8;
+}
+.serviceCard {
+  background: #fcf1e1 !important;
+  border-radius: 15px;
+}
+.pana {
+  height: 90px;
+}
+.webPara {
+  color: #293241 !important;
+  font-family: Hubot-Sans !important;
+  font-size: 25.647px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31.222px; /* 121.739% */
+}
+.servicesHead {
+  color: #293241 !important;
+  font-family: Hubot-Sans !important;
+  font-size: 44.603px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 55.754px; /* 125% */
+}
+
+  /*###############>Testimaonal Css End <#############  */
+ 
