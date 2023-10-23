@@ -101,13 +101,16 @@ line-height: 32.698px; /* 112% */
     width: 100%;
     
 }
+.bg-body-tertiary{
+    background-color: none !important;
+}
 .ideatxt{
     color: #000 !important;
 font-family: Hubot-Sans !important;
 font-size: 72px;
 font-style: normal;
-font-weight: 500;
-line-height: 92px; /* 127.778% */
+font-weight: bold;
+ 
 }
 .banTxt{
     color: #000 !important;
@@ -147,7 +150,8 @@ line-height: 35.629px; /* 142.517% */
     height: 40px;
 }
 .fluterborder{
-    border-radius: 7px;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
 }
 .footerlogo{
     height: 50px;
@@ -369,6 +373,7 @@ font-weight: 500;
     }
     .ideatxt{
         font-size: 50px;
+         
     }
   }
 @media screen and (max-width: 576px) {
