@@ -1,23 +1,86 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-<body>
-  <div class="container-fluid py-5 blog-contant px-md-5">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-      <!-- navbar   start ------- -->
-      <nav class="navbar navbar-expand-lg">
+
+    <style>
+  .blogsmain   .blogsCard a{
+    text-decoration: none !important;
+} 
+.blogsmain .blogsCard .fw500{
+    font-weight: 500;
+}
+.blogsmain .blogsCard .card{
+    padding: 15px;
+    border-radius: 15px !important;
+    /* height: 460px !important; */
+    margin-bottom: 50px;
+    height: 500px;
+}
+.blogsmain .blogsCard .card img{
+    /* min-height: 400px;  */
+    border-radius: 10px !important;
+    transition: .3s ease;
+} 
+.blogsmain .blogsCard .card img:hover{
+    scale: 1.02;
+}
+.blogsmain .blogsCard .card-text{
+    color: #8B8CA2 !important;
+} 
+.blogsmain .blogsCard .card-body a {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    transition: .4s ease;
+}
+.blogsmain .blogsCard .card-body a:hover {
+    color: #313769 ;
+    letter-spacing: .5px;
+}
+.blogsmain .blogsCard .card-body a i {
+    font-size: 13px;
+}
+.blogsmain .blogsCard .card-title {
+    line-height: 30px;
+    font-size: 18px;
+} 
+.blogsmain .blogsCard .card-text {
+    line-height: 23px;
+}
+
+@media(max-width:768px)
+{
+  .blogsmain .blogsCard .card{
+    
+    height: 100%;
+}
+}
+    </style>
+  </head>
+
+  <body>
+ 
+
+
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img class="altlogo" src="./assets/images/altlogo.png" alt="" />
+            <img class="altlogo" src="./assets/images/altlogo.png" alt />
           </a>
           <button
             class="navbar-toggler"
@@ -26,19 +89,16 @@
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
             class="collapse navbar-collapse marginNav"
-            id="navbarSupportedContent"
-          >
+            id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item mx-3">
-                <a class="nav-link homeNav" aria-current="page" href="./index.html"
-                  >Home</a
-                >
+                <a class="nav-link homeNav" aria-current="page"
+                  href="./index.html">Home</a>
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link homeNav" href="#">Events</a>
@@ -47,7 +107,7 @@
                 <a class="nav-link homeNav" href="./aboutus.html">About Us</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link homeNav" href="./blogs.html">Blog</a>
+                <a class="nav-link homeNav" href="./blog.html">Blog</a>
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link homeNav" href="./testimonial.html">Testimonials</a>
@@ -61,203 +121,347 @@
           </div>
         </div>
       </nav>
-      <!-- navbar   end ------- -->
 
-    <div class="row pt-5">
-      <h2 class="blog-heading-h2 pt-5">Hiring Offshore Developers – Mistakes And Key Steps to Avoid</h2>
-      <div class="d-flex gap-5 main-date">
-        <p class="para-date">Monday, January 07 2023 </p>
-        I
-        <p class="para-date">By Muhammad Haseeb</p>
-      </div>
-      <p class="para-first">Lorem ipsum dolor sit amet consectetur. Nulla et bibendum lectus dictum sed lacus dignissim
-        dolor. Feugiat nulla aliquet quisque quam arcu neque amet. Amet metus pellentesque eget scelerisque fringilla.
-        Mattis ut sed eget dui suspendisse est gravida vitae quam. Proin sem nunc at sit ac sit lacus interdum. Velit in
-        eu nunc nisi. Nunc adipiscing eget arcu egestas tellus gravida ac vitae. Et sit in habitant dolor in morbi.
-        Cursus eu id egestas dis pulvinar vulputate pharetra enim. Nec faucibus imperdiet nisl penatibus at metus.
-        Integer sit ac morbi cursus enim tristique. Morbi volutpat lacus suspendisse diam egestas sed tincidunt.</p>
-      <img class="w-100" src="./assets/images/main-image.png" alt="img">
-      <h2 class="blog-heading-h2 pt-md-5">10 Common Mistakes to Avoid While Hiring Offshore Developers</h2>
-      <p class="para-first">Lorem ipsum dolor sit amet consectetur. Nulla et bibendum lectus dictum sed lacus dignissim
-        dolor. Feugiat nulla aliquet quisque quam arcu neque amet. Amet metus pellentesque eget scelerisque fringilla.
-        Mattis ut sed eget dui suspendisse est gravida vitae quam. Proin sem nunc at sit ac sit lacus interdum. Velit in
-        eu nunc nisi. Nunc adipiscing eget arcu egestas tellus gravida ac vitae. Et sit in habitant dolor in morbi.
-        Cursus eu id egestas dis pulvinar vulputate pharetra enim. Nec faucibus imperdiet nisl penatibus at metus.
-        Integer sit ac morbi cursus enim tristique. Morbi volutpat lacus suspendisse diam egestas sed tincidunt.</p>
-      <h2 class="blog-heading-h2 pt-md-5">Focusing solely on cost:</h2>
-      <p class="para-first">Lorem ipsum dolor sit amet consectetur. Nulla et bibendum lectus dictum sed lacus dignissim
-        dolor. Feugiat nulla aliquet quisque quam arcu neque amet. Amet metus pellentesque eget scelerisque fringilla
-      </p>
-      <h2 class="blog-heading-h2 pt-md-5">Not Doing Thorough Research:</h2>
-      <p class="para-first">Lorem ipsum dolor sit amet consectetur. Nulla et bibendum lectus dictum sed lacus dignissim
-        dolor. Feugiat nulla aliquet quisque quam arcu neque amet. Amet metus pellentesque eget scelerisque fringilla
-      </p>
-      <div class="mt-md-5 d-flex text-center align-item-center justify-content-center">
-        <hr style="width: 80%;">
-      </div>
-      <div class="row main-form">
-        <div class="col-md-6 mt-5">
-          <div class="inp-form">
-            <label class="label-form" for="#">Name:</label> <br>
-            <input type="text" name="name" id="#" placeholder="">
-          </div>
-          <div class="inp-form mt-5">
-            <label class="label-form" for="#">Email:</label> <br>
-            <input type="text" name="name" id="#" placeholder="">
-          </div>
-        </div>
-        <div class="col-md-6 mt-5">
-          <label class="label-form" for="#">Write your comment</label>
-          <textarea class="w-100 text-area" name="" id=""  rows="0"></textarea>
-        </div>
-      </div>
-      <div class="d-flex align-item-center text-center justify-content-center mt-5">
-        <button class="btn btn-primary btn-submit">Submit</button>
-      </div>
-    </div>
-  </div>
-      <!-- footer start -------------- -->
 
-      <div class="container-fluid">
-        <section class="footerbg">
-          <!-- Footer -->
-          <footer class="">
-            <!-- Grid container -->
-            <div class="container-fluid p-4">
-              <!--Grid row-->
-              <div class="row">
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
-                  <h5 class="">
-                    <img
-                      class="footerlogo"
-                      src="./assets/images/altlogo.png"
-                      alt=""
-                    />
-                  </h5>
-  
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
-                    gravida posuere molestie ultrices
-                  </p>
-                  <div class="d-flex">
-                    <div class="fbdiv">
-                      <a href="#">
-                        <img
-                          class="fbicon"
-                          src="./assets/images/fbicon.png"
-                          alt=""
-                        />
-                      </a>
+      <section class="blogsmain pb-5">
+
+        <div class="blogsHeading">
+            <h1 class="text-center my-5 py-3 display-5 fw-semibold">Blogs</h1>
+        </div>
+
+        <div class="container-fluid">
+            <div class="blogsBody m-auto px-2 px-md-5">
+            
+                <div class="row">
+    
+                    <!-- Card 1  -->
+                    <div class="col-12 col-md-6 col col-lg-4" data-aos="flip-right"
+            data-aos-duration="1000">
+                        <div class="blogsCard">
+    
+                            <div class="card">
+                                <img src="./assets/images/card1Img.jpeg" class="img-fluid card-img-top" alt="Card Image">
+                                <div class="card-body pt-4 p-0">
+                                  <h5 class="card-title fw-bold">Hiring Offshore Developers – Mistakes And Key Steps to Avoid</h5>
+                                  <p class="card-text fw500 ">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing </p>
+                                  <a href="#" class="text-uppercase">
+                                    See more
+                                    <i class="mb-2 fa-solid fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+            
+                        </div>
                     </div>
-                    <div class="fbdiv mx-3">
-                      <a href="#">
-                        <img
-                          class="fbicon"
-                          src="./assets/images/YouTube.png"
-                          alt=""
-                        />
-                      </a>
+    
+                    <!-- Card 2  -->
+                    <div class="col-12 col-md-6 col col-lg-4" data-aos="flip-left"
+            data-aos-duration="1000">
+                        <div class="blogsCard">
+    
+                            <div class="card">
+                                <img src="./assets/images/card2Img.jpeg" class="img-fluid card-img-top" alt="Card Image">
+                                <div class="card-body pt-4 p-0">
+                                  <h5 class="card-title fw-bold">5 Effective Ways Of Hiring Best Offshore Software Developers – Checklist</h5>
+                                  <p class="card-text fw500 ">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing </p>
+                                  <a href="#" class="text-uppercase">
+                                    See more
+                                    <i class="mb-2 fa-solid fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+            
+                        </div>
                     </div>
-  
-                    <!-- <div class="fbdiv">
+    
+                    <!-- Card 3  -->
+                    <div class="col-12 col-md-6 col col-lg-4" data-aos="flip-right"
+            data-aos-duration="1000">
+                        <div class="blogsCard">
+    
+                            <div class="card">
+                                <img src="./assets/images/card3Img.jpeg" class="card-img-top" alt="Card Image">
+                                <div class="card-body pt-4 p-0">
+                                  <h5 class="card-title fw-bold">How to Choose Offshore Software Development Company?</h5>
+                                  <p class="card-text fw500 ">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing </p>
+                                  <a href="#" class="text-uppercase">
+                                    See more
+                                    <i class="mb-2 fa-solid fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                    
+                    <!-- Card 4  -->
+                    <div class="col-12 col-md-6 col col-lg-4 " data-aos="flip-left"
+            data-aos-duration="1000">
+                        <div class="blogsCard">
+    
+                            <div class="card">
+                                <img src="./assets/images/cardImg4.jpeg" class="card-img-top" alt="Card Image">
+                                <div class="card-body pt-4 p-0">
+                                  <h5 class="card-title fw-bold">Hiring Offshore Developers – Mistakes And Key Steps to Avoid</h5>
+                                  <p class="card-text fw500 ">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing </p>
+                                  <a href="#" class="text-uppercase">
+                                    See more
+                                    <i class="mb-2 fa-solid fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+    
+                    <!-- Card 5  -->
+                    <div class="col-12 col-md-6 col col-lg-4" data-aos="flip-right"
+            data-aos-duration="1000">
+                        <div class="blogsCard">
+    
+                            <div class="card">
+                                <img src="./assets/images/cardImg5.jpeg" class="card-img-top" alt="Card Image">
+                                <div class="card-body pt-4 p-0">
+                                  <h5 class="card-title fw-bold">5 Effective Ways Of Hiring Best Offshore Software Developers – Checklist</h5>
+                                  <p class="card-text fw500 ">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing </p>
+                                  <a href="#" class="text-uppercase">
+                                    See more
+                                    <i class="mb-2 fa-solid fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+    
+                    <!-- Card 6  -->
+                    <div class="col-12 col-md-6 col col-lg-4" data-aos="flip-left"
+            data-aos-duration="1000">
+                        <div class="blogsCard">
+    
+                            <div class="card">
+                                <img src="./assets/images/cardImg6.jpeg" class="card-img-top" alt="Card Image">
+                                <div class="card-body pt-4 p-0">
+                                  <h5 class="card-title fw-bold">How to Choose Offshore Software Development Company?</h5>
+                                  <p class="card-text fw500 ">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing </p>
+                                  <a href="#" class="text-uppercase">
+                                    See more
+                                    <i class="mb-2 fa-solid fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                    
+                    <!-- Card 7  -->
+                    <div class="col-12 col-md-6 col col-lg-4" data-aos="flip-right"
+            data-aos-duration="1000">
+                        <div class="blogsCard">
+    
+                            <div class="card">
+                                <img src="./assets/images/cardImg7.jpeg" class="card-img-top" alt="Card Image">
+                                <div class="card-body pt-4 p-0">
+                                  <h5 class="card-title fw-bold">Hiring Offshore Developers – Mistakes And Key Steps to Avoid</h5>
+                                  <p class="card-text fw500 ">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing </p>
+                                  <a href="#" class="text-uppercase">
+                                    See more
+                                    <i class="mb-2 fa-solid fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+    
+                    <!-- Card 8  -->
+                    <div class="col-12 col-md-6 col col-lg-4" data-aos="flip-left"
+            data-aos-duration="1000">
+                        <div class="blogsCard">
+    
+                            <div class="card">
+                                <img src="./assets/images/cardImg8.jpeg" class="card-img-top" alt="Card Image">
+                                <div class="card-body pt-4 p-0">
+                                  <h5 class="card-title fw-bold">5 Effective Ways Of Hiring Best Offshore Software Developers – Checklist</h5>
+                                  <p class="card-text fw500 ">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing </p>
+                                  <a href="#" class="text-uppercase">
+                                    See more
+                                    <i class="mb-2 fa-solid fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+    
+                    <!-- Card 9  -->
+                    <div class="col-12 col-md-6 col col-lg-4" data-aos="flip-right"
+            data-aos-duration="1000">
+                        <div class="blogsCard">
+    
+                            <div class="card">
+                                <img src="./assets/images/cardImg9.png" class="card-img-top" alt="Card Image">
+                                <div class="card-body pt-4 p-0">
+                                  <h5 class="card-title fw-bold">How to Choose Offshore Software Development Company?</h5>
+                                  <p class="card-text fw500 ">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing </p>
+                                  <a href="#" class="text-uppercase">
+                                    See more
+                                    <i class="mb-2 fa-solid fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                    
+                </div>
+            
+            </div>
+        </div>
+
+    </section>
+
+
+    
+
+
+    <!--##############> Footer Start <############# -->
+    <div class="container-fluid">
+      <section class="footerbg">
+        <!-- Footer -->
+        <footer class>
+          <!-- Grid container -->
+          <div class="container-fluid p-4">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                <h5 class>
+                  <img
+                    class="footerlogo"
+                    src="./assets/images/altlogo.png"
+                    alt />
+                </h5>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                  gravida posuere molestie ultrices
+                </p>
+                <div class="d-flex">
+                  <div class="fbdiv">
+                    <a href="#">
+                      <img
+                        class="fbicon"
+                        src="./assets/images/fbicon.png"
+                        alt />
+                    </a>
+                  </div>
+                  <div class="fbdiv mx-3">
+                    <a href="#">
+                      <img
+                        class="fbicon"
+                        src="./assets/images/YouTube.png"
+                        alt />
+                    </a>
+                  </div>
+
+                  <!-- <div class="fbdiv">
                     <a href="#">
                       <img class="fbicon" src="./assets/images/fbicon.png" alt="">
                     </a>
                   </div> -->
-                    <div class="fbdiv">
-                      <a href="#">
-                        <img
-                          class="fbicon"
-                          src="./assets/images/insta.png"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!--Grid column-->
-  
-                <!--Grid column-->
-                <div
-                  class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex justify-content-md-center"
-                >
-                  <ul class="list-unstyled mb-0">
-                    <h5 class="text-uppercase">Company</h5>
-                    <li class="my-3">
-                      <a href="./index.html" class="homeLink">Home</a>
-                    </li>
-                    <li class="my-3">
-                      <a href="#" class="homeLink">Products</a>
-                    </li>
-                    <li class="my-3">
-                      <a href="./aboutus.html" class="homeLink">About Us</a>
-                    </li>
-                    <li class="my-3">
-                      <a href="./blogs.html" class="homeLink">Blogs</a>
-                    </li>
-                    <li class="my-3">
-                      <a href="./testimonial.html" class="homeLink">Testimonials</a>
-                    </li>
-                  </ul>
-                </div>
-                <!--Grid column-->
-  
-                <!--Grid column-->
-                <div
-                  class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex justify-content-md-center"
-                >
-                  <ul class="list-unstyled mb-0 my-3">
-                    <h5 class="text-uppercase mb-0">Suppport</h5>
-                    <li class="my-3">
-                      <a href="#" class="homeLink">Support Carrer</a>
-                    </li>
-                    <li class="my-3">
-                      <a href="#" class="homeLink">24h Service</a>
-                    </li>
-                    <li class="my-3">
-                      <a href="#" class="homeLink"> Quick Chat</a>
-                    </li>
-                    <li class="my-3">
-                      <a href="#" class="homeLink">Setting & Privacy</a>
-                    </li>
-                  </ul>
-                </div>
-                <!--Grid column-->
-                <div
-                  class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex justify-content-md-center"
-                >
-                  <div class="">
-                    <h4 class="">Contact Us</h4>
-                    <div class="mt-3">
-                      <input
-                        type="email"
-                        class="form-control inputBorder"
-                        id="exampleFormControlInput1"
-                      />
-                      <button
-                        type="button"
-                        class="btn btn-primary requestBtn px-4 mt-3"
-                      >
-                        Request a call back
-                      </button>
-                    </div>
+                  <div class="fbdiv">
+                    <a href="#">
+                      <img
+                        class="fbicon"
+                        src="./assets/images/insta.png"
+                        alt />
+                    </a>
                   </div>
                 </div>
               </div>
-              <!--Grid row-->
-            </div>
-            <!-- Grid container -->
-          </footer>
-          <!-- Footer -->
-        </section>
-      </div>
-  
-      <!-- footer end -------------- -->
+              <!--Grid column-->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
+              <!--Grid column-->
+              <div
+                class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex justify-content-md-center">
+                <ul class="list-unstyled mb-0">
+                  <h5 class="text-uppercase">Company</h5>
+                  <li class="my-3">
+                    <a href="./index.html" class="homeLink">Home</a>
+                  </li>
+                  <li class="my-3">
+                    <a href="#" class="homeLink">Products</a>
+                  </li>
+                  <li class="my-3">
+                    <a href="./aboutus.html" class="homeLink">About Us</a>
+                  </li>
+                  <li class="my-3">
+                    <a href="./blogs.html" class="homeLink">Blogs</a>
+                  </li>
+                  <li class="my-3">
+                    <a href="./testimonial.html" class="homeLink">Testimonials</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div
+                class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex justify-content-md-center">
+                <ul class="list-unstyled mb-0 my-3">
+                  <h5 class="text-uppercase mb-0">Suppport</h5>
+                  <li class="my-3">
+                    <a href="#" class="homeLink">Support Carrer</a>
+                  </li>
+                  <li class="my-3">
+                    <a href="#" class="homeLink">24h Service</a>
+                  </li>
+                  <li class="my-3">
+                    <a href="#" class="homeLink"> Quick Chat</a>
+                  </li>
+                  <li class="my-3">
+                    <a href="#" class="homeLink">Setting & Privacy</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+              <div
+                class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex justify-content-md-center">
+                <div class>
+                  <h4 class>Contact Us</h4>
+                  <div class="mt-3">
+                    <input
+                      type="email"
+                      class="form-control inputBorder"
+                      id="exampleFormControlInput1" />
+                    <button
+                      type="button"
+                      class="btn btn-primary requestBtn px-4 mt-3">
+                      Request a call back
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+        </footer>
+        <!-- Footer -->
+      </section>
+    </div>
+    <!--#################> footer end <############# --->
+
+
+    
+    <script>
+  AOS.init();
+</script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
 
 </html>

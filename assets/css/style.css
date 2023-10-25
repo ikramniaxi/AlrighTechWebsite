@@ -737,6 +737,20 @@ span{
     border-radius: 30px;
     top: -200px;
 }
+
+
+@media(max-width:768px)
+{
+    .emptyDiv{
+        width: 100%;
+    }
+    .mainImg{
+position: absolute !important;
+left: 30px !important;
+background-size: contain !important;
+    }
+}
+
 .mainImg{
     position: absolute;
     top: 60px;
@@ -830,10 +844,22 @@ ul li p{
     font-weight: 500;
     font-size: 17px;
 }
+@media(max-width:768px)
+{
+    .img1{
+        border-radius: 30px;
+        width: 100%;
+        height: 350px;
+        background-image: url( '../images/FirstSectionImg1.jpeg');
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+    } 
+}
 @media (max-width : 320px) {
     .img1{
         border-radius: 30px;
-        width: 45%;
+        width: 100%;
         height: 350px;
         background-image: url( '../images/FirstSectionImg1.jpeg');
         background-size: cover;
@@ -842,9 +868,9 @@ ul li p{
     }
     .img2{
         border-radius: 30px;
-        width: 45%;
+        width: 100%;
         height: 350px;
-        background-image: url(./images/FirstSectionImg2.jpeg);
+       
         background-size: cover;
         background-position: center;
         object-fit: cover;
@@ -853,14 +879,15 @@ ul li p{
         position: relative;
         height: 100%;
     }
-    .emptyDiv{
+    
+    /* .emptyDiv{
         background-color: #DBEFFA;
         width: 60%;
         height: 150px;
         border-radius: 30px;
         top: -200px;
-    }
-    .mainImg{
+    } */
+    /* .mainImg{
         position: absolute;
         top: 30px;
         left: 50px;
@@ -870,21 +897,23 @@ ul li p{
         width: 80%;
         background-position: center;
         background-size: cover;
-    }
+    } */
     
 }
 @media (max-width : 768px) {
+
+    
     .noDiv{
         height: 100%;
-        width: 80%;
+        width: 100%;
         background-color: #FADBE2;
         border-radius: 30px;
         display: flex;
-        margin-left: -55px !important;
+       margin-left: 0px !important;
     }
     .imgDiv{
         height: 120%;
-        width: 90%;
+        width: 100% !important;
         position: absolute;
         top: 30px;
         right: 0px;
@@ -893,7 +922,8 @@ ul li p{
     .imgGroup2{
         width: 100%;
         position: relative;
-        margin: 50px 0px;
+        margin: 0px 0px;
+        padding: 0px 0px ;
         height: 200px;
     }
 }
