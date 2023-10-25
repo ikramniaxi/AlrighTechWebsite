@@ -126,7 +126,7 @@ font-weight: 400;
 line-height: 32.698px; /* 112% */
 }
 .firstimg{
-    height: 55vh;
+    height: 60vh;
     width: 100%;
     
 }
@@ -143,8 +143,6 @@ line-height: 32.698px; /* 112% */
 font-family: Hubot-Sans !important;
 font-size: 72px;
 font-style: normal;
-font-weight: bold;
- 
 }
 .bgcolor{
     position: relative;
@@ -413,7 +411,7 @@ font-weight: 500;
 /* media queries----------------- */
 @media screen and (max-width: 992px) {
     .marginNav{
-        margin-left: 0px;
+        margin-left: -12px;
     }
   }
 
@@ -432,11 +430,27 @@ font-weight: 500;
     .firstimg{
         height: 100vh;
         width: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        margin-top: 10px;
          
+    }
+     .frequently{
+        font-size: 35px !important;
+     }
+    .choose {
+        font-size: 35px !important;
     }
     .ideatxt{
         font-size: 50px;
          
+    }
+     
+    .servicesHead {
+        font-size: 35px !important;
+    }
+    .latestWork{
+        font-size: 35px;
     }
   }
 @media screen and (max-width: 576px) {
@@ -1201,6 +1215,7 @@ a {
       font-size: 18px;
       padding: 8px 25px;
     }
+   
   }
   
   @media (max-width: 540px) {
@@ -1338,6 +1353,7 @@ font-weight: 500;
     }
     
 }
+ 
 
   /* contact for job css end -------------------------- */
 
@@ -1461,7 +1477,7 @@ font-weight: 500;
 .servicesHead {
   color: #293241 !important;
   font-family: Hubot-Sans !important;
-  font-size: 44.603px !important;
+  font-size: 44.603px;
   font-style: normal;
   font-weight: 600;
   line-height: 55.754px; /* 125% */
